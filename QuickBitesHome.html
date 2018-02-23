@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 155) {
+                $('#header').addClass("sticky");
+                $('#QB').addClass("white");
+            }
+            else {
+                $('#header').removeClass("sticky");
+                $('#QB').removeClass("white");
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="Logo"><img src="LOGO.jpeg" alt="QuickBitez" id="Logo"></div>
+    <div id="header"><header>
+        <div class="home" id="dropdown">
+            <img src="menuIcon.png" alt="menu" class="homeImg">
+            <div class="Menu_Dropdown">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Sign Up/Sign In</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Be a QB Member</a></li>
+                    <li><a href="#">Be a Partner Restaurant</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1 id="QB">Quick Bitez</h1>
+        <div class="home" id="Sign">
+            <ul>
+                <li class="Sign"><a href="#">Sign In<a/></li>
+                <li class="Sign"><button class="active"><a href="#">Get Started</a></button></li>
+            </ul>
+        </div>
+    </header></div>
+
+    <div id="pt1">
+        <img src="FoodCourt.jpg" alt="Bring the Food Court to You">
+    </div>
+    <div id="pt2">
+
+    </div>
+    <footer>
+
+        <table id="footer">
+            <tr>
+                <th class="col1">Explore</th>
+                <th class="col2">Company</th>
+                <th class="col3">Follow Us</th>
+            </tr>
+            <tr>
+                <td class="col1">how it works</td>
+                <td class="col2">About</td>
+                <td class="col3">Facebook</td>
+            </tr>
+            <tr>
+                <td class="col1">why be a part?</td>
+                <td class="col2">Our Team</td>
+                <td class="col3">Twitter</td>
+            </tr>
+            <tr>
+                <td class="col1">help center</td>
+                <td class="col2">Contact Us</td>
+                <td class="col3"></td>
+            </tr>
+            <tr>
+                <td class="col1"></td>
+                <td class="col2">Blog</td>
+                <td class="col3"></td>
+            </tr>
+        </table>
+        <p class="copyright_text">&copy; copyright 2018.<br>
+            designed and developed by Group L of INFO3490.</p>
+    </footer>
+</body>
+</html>
