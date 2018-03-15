@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Login Form Design</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+     <div class="loginbox">
+     <img src="avatar1.png" class="avatar">
+         <h1>Login Here</h1>
+         <form>
+              <p>Username</p>
+              <input type="text" name="" placeholder="Enter Username">
+              <p>Password</p>
+              <input type="password" name="" placeholder="Enter Password">
+              <input type="submit" name="" value="Login"><br>
+              <a href="#">Lost your password?</a><br>             
+              <a href="#">Sign up as Restaurant user</a>
+         </form>
+      </div>
+
+</body>
+</head>
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCNVlh9Z3xmx7W44bbPEgA_eimlDnkyxJc",
+    authDomain: "quick-bites-dashboard-app.firebaseapp.com",
+    databaseURL: "https://quick-bites-dashboard-app.firebaseio.com",
+    projectId: "quick-bites-dashboard-app",
+    storageBucket: "quick-bites-dashboard-app.appspot.com",
+    messagingSenderId: "493884657785"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

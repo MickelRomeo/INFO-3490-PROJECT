@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #footer{
+    width:100%;
+    border: 1px solid grey;
+    
+   
+}
+  .logo{
+    margin: 10px 50px;
+    height: 100px;
+}
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: 		#FFFFFF; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: 	#FF8C00; /* Black Gray */
+      color: #ffffff;
+  }
+  .bg-5 { 
+      background-color: 	#000000; /* Black Gray */
+      color: #ffffff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+  background-color: 	#000000;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  </style>
+</head>
+<body>
+<header>
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+
+  <div class="container">
+    <div class="navbar-header">
+	<img src="logo.png" class="logo">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h1 style="font-family:verdana;"class="margin">Small Cafe</h1><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2> Breakfast Menu </h2>
+           
+  <table class="table table table-condensed">
+    <thead>
+      <tr>
+	    <th>Item No.</th>
+        <th>Item</th>
+        <th>Cost</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	   
+        <td>Hot Dogs Or Bread & Sausage</td>
+        <td>$9.00</td>
+        
+      </tr>
+      <tr>
+	  
+        <td>Cheese Sandwhich</td>
+        <td>$8.00</td>
+        
+      </tr>
+      <tr>
+	  
+        <td>Bake & Cheese</td>
+        <td>$10.00</td>
+        
+      </tr>
+	  
+	  <tr>
+	  
+        <td>Bake & Egg</td>
+        <td>$10.00</td>
+        
+      </tr>
+	  
+	  <tr>
+	  
+        <td>Bake Egg & Cheese</td>
+        <td>$12.00</td>
+        
+      </tr>
+	  
+	    <tr>
+		
+        <td>Bake Egg & Sausage </td>
+        <td>$10.00</td>
+        
+      </tr>
+	    <tr>
+		
+        <td>Potato pies</td>
+        <td>$5.00</td>
+        
+      </tr>
+	  
+    </tbody>
+  </table>
+    </div>
+    <div class="col-sm-6"> 
+	<h2>Daily Lunch Menu:</h2>
+      
+	  
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+	    
+        <th>Day</th>
+        <th>Meals</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	  
+        <td>Monday</td>
+        <td>Jerk chicken, Rice, green /potato salad</td>
+        <td>S:$25 L:$35</td>
+      </tr>
+      <tr>
+	  
+        <td>Tuesday</td>
+        <td>meal*</td>
+        <td>$*</td>
+      </tr>
+      <tr>
+	  
+        <td>Wednesday</td>
+        <td>meal*</td>
+        <td>$*</td>
+      </tr>
+	  
+	  <tr>
+	  
+        <td>Thursday</td>
+        <td>meal*</td>
+        <td>$*</td>
+      </tr>
+	  
+	  <tr>
+	  
+        <td>Friday</td>
+        <td>meal*</td>
+        <td>$*</td>
+	  
+	
+	  
+    </tbody>
+  </table>
+	  
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-4 text-left">
+<div class="col-sm-6">
+<h1> Breakfast Take Away </h1>
+<form class="form-inline" action=" ">
+    <div class="form-group">
+      <label for="text">Order :</label>
+      <input type="text" class="form-control" id="Order" placeholder="Enter Order Details" name="text">
+   
+	</div>
+	</form>
+	<button type="button" class="btn btn-danger btn-block">Sumbit</button>
+	</div>
+    <div class="col-sm-6">
+	<h1> Lunch Delivery/Take Away </h1>
+	<form class="form-inline" action=" ">
+    <div class="form-group">
+      <label for="text">Order :</label>
+      <input type="text" class="form-control" id="Order" placeholder="Enter Order Details" name="text">
+    <label class="radio-inline"><input type="radio" name="optradio">Small</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Large</label>
+	</div>
+	</form>
+	<label class="radio-inline"><input type="radio" name="optradio">Take Away</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Delivery</label>
+	
+<div class="form-group">
+<p>For Delivery</p>
+      <label for="text">Location Details:</label>
+      <input type="text" class="form-control" id="Location" placeholder="Enter Location Details" name="text">
+    
+	</div>
+	<button type="button" class="btn btn-danger btn-block">Submit</button>
+	</div>
+	
+<!-- Footer -->
+<footer class="container-fluid bg-5 text-left">
+
+</footer>
+  © COPYRIGHT 2018.
+DESIGNED AND DEVELOPED BY GROUP L OF INFO3490
+</body>
+</html>
