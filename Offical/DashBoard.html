@@ -19,9 +19,6 @@
     
    
 }
- 
-
-
   .logo{
     margin: 10px 50px;
     height: 100px;
@@ -50,10 +47,10 @@
       background-color: 	#FF8C00; /* Black Gray */
       color: #ffffff;
   }
-  .bg-5 { 
-      background-color: 	#ffffff; /* Black Gray */
-      color: #000000;
-  }
+    .bg-5 {
+            background-color: 	black; /* Black Gray */
+            color: red;
+        }
   .container-fluid {
       padding-top: 10x;
       padding-bottom: 10px;
@@ -65,13 +62,17 @@
       border: 0;
       border-radius: 0;
       margin-bottom: 0;
-      font-size: 12px;
+      font-size: 20px;
       letter-spacing: 5px;
   }
   .navbar-nav  li a:hover {
       color: #ff0000 !important;
   }
+ p{
+    border-bottom: 6px solid red;
+    background-color: lightgrey;
 
+}
   </style>
 </head>
 <body>
@@ -91,9 +92,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="http://localhost/Offical/DashBoard.html">Dashboard</a></li>
+        <li><a href="http://localhost/Offical/ShoppingCart.php">Shopping Cart</a></li>
+        <li><a href="http://localhost/Offical/contact/contact.html">Contact</a></li>
+        <li><a href="http://localhost/Offical/BitesHomePage/BitesHomePage/homepage.html">LogOut</a></li>
       </ul>
     </div>
   </div>
@@ -103,29 +105,24 @@
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-1 text-left">
         
-  <h1 style="font-family:verdana;"class="margin">Small Cafe</h1><br>
-  <div class="col-sm-6">    
-  <img src="smallcafe.jpg" class="img-responsive margin" style="width:400px;height:400px;" alt="Smallcafe">
-  </div>
-  <div class="col-sm-6">
-   <p> Location: Ground Floor SAC, Oposite Trinity Hall</p>
-   <p>Opening Hours: Mon-Friday 8:00 AM-4:PM</p>
-   <button type="button" class="btn btn-warning">Enter!</button>
+  <h1 align="center" style="font-family:verdana;"class="margin">Quick-Bites Dashboard</h1>
+  <div class="col-sm-12" align="center">
+  <h1 style="font-family:verdana;"class="margin">Small Cafe</h1>
+   <a href="MenuCategory.html">
+  <img src="smallcafe.jpg" class="img-responsive margin" style="width:200px;height:200px;" alt="Smallcafe">
+  </a>
   </div>
 </div>
-
 <div class="container-fluid bg-4 text-center">
 
 <h1> More Resturants Coming to you Soon! </h1>
 
 </div>
-	
 
-	
 <!-- Footer -->
-<footer class="container-fluid bg-5 text-left">
-  © COPYRIGHT 2018.
-DESIGNED AND DEVELOPED BY GROUP L OF INFO3490
+<footer class="bg-5 text-left">
+    © COPYRIGHT 2018.
+    DESIGNED AND DEVELOPED BY GROUP L OF INFO3490
 </footer>
 </body>
 </html>

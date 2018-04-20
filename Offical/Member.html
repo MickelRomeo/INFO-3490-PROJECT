@@ -1,101 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html >
+<html>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="official.css">
-  <style>
-  .container-fluid {
-      padding-top: 200x;
-      padding-bottom: 200px;</style>
-	  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Dynamic Order Form</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- BEGIN FOXYCART FILES -->
+
+    <!-- END FOXYCART FILES -->
+    <style>
+        .bg-5 {
+            background-color: 	black; /* Black Gray */
+            color: red;
+        }
+
+        .logo{
+            margin: 10px 50px;
+            height: 100px;
+        }
+        .navbar {
+            background-color: 	#000000;
+            padding-top: 15px;
+            padding-bottom: 0px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 20px;
+            letter-spacing: 5px;
+        }
+        .navbar-nav  li a:hover {
+            color: #ff0000 !important;
+        }
+        p{
+            border-bottom: 6px solid red;
+            background-color: lightgrey;
+    </style>
+
+    <script type='text/javascript' src='js/order.js'></script>
 </head>
+
 <body>
 <header>
-<!-- Navbar -->
-<nav class="navbar navbar-default">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
 
-  <div class="container">
-    <div class="navbar-header">
-	<img src="logo.png" class="logo">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <div class="container">
+            <div class="navbar-header">
+                <img src="logo.png" class="logo">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost/Offical/DashBoard.html">Dashboard</a></li>
+                    <li><a href="http://localhost/Offical/ShoppingCart/index.php">Shopping Cart</a></li>
+                    <li><a href="http://localhost/Offical/contact/contact.html">Contact</a></li>
+                    <li><a href="http://localhost/Offical/BitesHomePage/homepage.html">LogOut</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
+<div id="shop">
+    <div class="container-fluid bg-3 text-center">
+        <h1 align="center">Orders</h1>
 
-<!-- First Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <table class="table table table-condensed">
-    <thead>
-      <tr>
-	    <th>Name<th>
-        <th>Order</th>
-        <th>Size</th>
-		<th>Take/delivery</th>
-		<th>Location</th>
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-	   <td> Jack Doe<td>
-        <td>Jerk chicken, Rice, green /potato salad</td>
-        <td>Small</td>
-		<td>Take Away</td>
-		<td>*</td>
-        
-		
-      </tr>
-      <tr>
-	   <td> Jill Doe<td>
-       <td>Jerk chicken, Rice, green /potato salad</td>
-        <td>Large</td>
-		<td>Delivery</td>
-		<td>Natural Science Building DCIT Office</td>
-		
-      </tr>
-      
-	  
-    </tbody>
-  </table>
+        <table class="table table table-condensed">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>Order<th>
+                <th>Collection</th>
+                <th>Location</th>
+                <th>Total</th>
+                <th>Status</th>
+                <th>Actions</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Jonny Wick</td>
+                <td> Cheese Sandwich,Coca Cola<td>
+                <td>Take Away</td>
+                <td>N/A</td>
+                <td>$15.00</td>
+                <td>Not Yet Started</td>
+                <td><button type="button" class="btn btn-Warning">Change Status</button>
+                    <button type="button" class="btn btn-Danger">Delete</button>
+                </td>
+
+
+            </tr>
+
+
+
+            </tbody>
+        </table>
+
+    </div>
 </div>
-<!-- Second Container (Grid) -->
-<div class="container-fluid bg-4 text-center">    
-  <form class="form-inline" action=" ">
-    <div class="form-group">
-	<h1>Change Menu Item</h1>
-      <label for="text">Enter Day:</label>
-      <input type="text" class="form-control" id="Order" placeholder="Enter Day of Menu Item" name="text">
-      <label for="text">Enter Lunch Details</label>
-      <input type="text" class="form-control" id="Order" placeholder="Enter Details Menu Item" name="text">
-   
-	</div>
-	</form>
-	<button type="button" class="btn btn-danger btn-block">Sumbit</button>
-</div>
- <!-- Footer -->
-<footer class="container-fluid bg-1 text-left">
-  © COPYRIGHT 2018.
-DESIGNED AND DEVELOPED BY GROUP L OF INFO3490
-</footer>
 </body>
- 
 </html>
